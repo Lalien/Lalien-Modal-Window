@@ -1,0 +1,39 @@
+.hidden-modal {
+  display: none;
+  text-align: center;
+  background-color:rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9998;
+  padding-top: 10%;
+  padding-bottom: 40%;
+}
+
+.hidden-modal video {
+  width: 50%;
+  position: relative;
+  z-index: 9999;
+  opacity: 1;
+}
+
+.fusion-one-half {
+  position: static;
+}
+
+.hidden-modal iframe {
+  width: 50%;
+}
+
+@media (max-width: 1024px) {
+
+  .hidden-modal {
+    padding-top: 20%;
+  }
+
+  .hidden-modal video {
+    width: 75%;
+  }
+}
