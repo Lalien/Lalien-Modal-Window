@@ -4,9 +4,6 @@
 			if (target.hasClass('hidden-video') || target.hasClass('modal-window-trigger') || target.hasClass('youtube-modal-window')) {
 				
 				jQuery('.hidden-modal').each(function(i, val) {
-					console.log(i, val, jQuery(this));
-					console.log(jQuery(this).index())
-					console.log(event.target)
 					var main_index;
 					jQuery('.modal-window-trigger').each(function(i, val) {
 						if (event.target == val) {
@@ -19,7 +16,6 @@
 						$modal.fadeIn();
 						$modal.children('video').trigger('play');
 					}
-					console.log(main_index);
 				});
 			} else {
 				jQuery('.hidden-modal').fadeOut();
