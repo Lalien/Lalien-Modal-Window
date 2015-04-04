@@ -1,7 +1,7 @@
 	jQuery(document).ready(function() {
 		jQuery(document).on('click', function(event) {
 			var target = jQuery(event.target);
-			if (target.hasClass('hidden-video') || target.hasClass('modal-window-trigger') || target.hasClass('youtube-modal-window')) {
+			if (target.hasClass('modal-window-trigger') || target.parents('.hidden-modal').length) {
 				
 				jQuery('.hidden-modal').each(function(i, val) {
 					var main_index;
