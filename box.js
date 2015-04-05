@@ -14,12 +14,10 @@
 						var modal = jQuery('.hidden-modal').get(main_index);
 						var $modal = jQuery(modal);
 						$modal.fadeIn();
-						$modal.children('video').trigger('play');
 					}
 				});
 			} else {
 				jQuery('.hidden-modal').fadeOut();
-				jQuery('video').trigger('pause');
 			}
 		});
 	});
